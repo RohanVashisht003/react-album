@@ -8,7 +8,6 @@ import EditAlbum from "./EditAlbum";
 
 function App() {
   return (
-    <Router>
     <div className="App">
       <Header/>
       <Routes>
@@ -18,8 +17,6 @@ function App() {
         <Route path="/edit/:id" element={<EditAlbum/>}/>
       </Routes>
     </div>
-    </Router>
-    
   );
 }
 
