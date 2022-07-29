@@ -15,7 +15,7 @@ function Header() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className='to-right'>
           <Nav>
-            <Nav.Link as={Link } to='/react-album' className='text-color'>Home</Nav.Link>
+            <Nav.Link as={Link } to='/' className='text-color'>Home</Nav.Link>
             <Nav.Link as={Link } to='/add' className='text-color'>Add Album</Nav.Link>
           </Nav>
         </Navbar.Collapse>
