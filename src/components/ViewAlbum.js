@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import {useParams } from "react-router-dom";
-import axios from "axios";
 import { Badge, Container, Form, Row} from 'react-bootstrap';
 
 function ViewAlbum() {
@@ -19,8 +18,10 @@ function ViewAlbum() {
     },[]);
 
     const loadAlbums = async()=>{
-        const res = await axios.get(`https://jsonplaceholder.typicode.com/albums/${id}`);
-        setAlbum(res.data); 
+      const result = await fetch(`https://jsonplaceholder.typicode.com/albums/${id}`)
+      .then((res)=>res.json());
+      // updating state
+      setAlbum(result);
     }
     
   return (
