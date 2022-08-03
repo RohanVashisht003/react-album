@@ -1,5 +1,5 @@
 # Hosted Link
-##['https://rohanvashisht003.github.io/react-album/']('https://rohanvashisht003.github.io/react-album/')
+## [https://rohanvashisht003.github.io/react-album/]('https://rohanvashisht003.github.io/react-album/')
 
 
 
